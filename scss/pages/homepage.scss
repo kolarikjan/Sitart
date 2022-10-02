@@ -76,7 +76,7 @@
                 height: 40px;
                 width: 40px;
                 background-color: $background-color;
-                content: url("../img/arrow-blue-right2.png");
+                content: url("../img/arrow-blue-right2.svg");
                 @include flexCenter();
                 z-index: 9999;
                 @include media("md") {

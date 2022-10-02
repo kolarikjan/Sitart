@@ -7,7 +7,7 @@
     font-weight: 600;
     padding: 1rem 2rem 1rem 3.25rem;
     color: $primary-color;
-    background-image: url("../img/arrow-blue-right.png");
+    background-image: url("../img/arrow-blue-right.svg");
     background-repeat: no-repeat;
     background-position: left 20px center;
     transition-duration: 0.3s;
@@ -21,5 +21,26 @@
     img {
         margin-right: 0.5rem;
         display: inline-block;
+    }
+}
+.button-blue {
+    display: block;
+    border-radius: $button-radius;
+    border: 1px solid $highlight-color;
+    background-color: $highlight-color;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.35px;
+    padding: 1rem 4.5rem 1rem 2.5rem;
+    color: $primary-color-darkbg;
+    background-image: url("../img/arrow-grey-right4.svg");
+    background-repeat: no-repeat;
+    background-position: right 30px center;
+    transition-duration: 0.3s;
+    @include widthFit();
+    &:hover {
+        color: $highlight-color;
+        background-color: $background-color;
+        background-image: url("../img/arrow-blue-right4.svg");
     }
 }

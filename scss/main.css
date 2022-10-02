@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul, ol {
-  color: #000;
+  color: #3b3b3b;
 }
 
 input, textarea {
@@ -200,7 +200,7 @@ input, textarea {
   font-weight: 600;
   padding: 1rem 2rem 1rem 3.25rem;
   color: #000;
-  background-image: url("../img/arrow-blue-right.png");
+  background-image: url("../img/arrow-blue-right.svg");
   background-repeat: no-repeat;
   background-position: left 20px center;
   transition-duration: 0.3s;
@@ -216,6 +216,29 @@ input, textarea {
 .button-white img {
   margin-right: 0.5rem;
   display: inline-block;
+}
+
+.button-blue {
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #2863ec;
+  background-color: #2863ec;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.35px;
+  padding: 1rem 4.5rem 1rem 2.5rem;
+  color: #fff;
+  background-image: url("../img/arrow-grey-right4.svg");
+  background-repeat: no-repeat;
+  background-position: right 30px center;
+  transition-duration: 0.3s;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+.button-blue:hover {
+  color: #2863ec;
+  background-color: #fff;
+  background-image: url("../img/arrow-blue-right4.svg");
 }
 
 .section {
@@ -381,7 +404,7 @@ input, textarea {
 }
 .hpBanner__advantages li {
   padding-left: 2rem;
-  background-image: url("../img/icon-tick.png");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: left top 7px;
   color: #fff;
@@ -394,6 +417,47 @@ input, textarea {
     font-size: 16px;
     line-height: 34px;
   }
+}
+
+.breadcrumb {
+  padding: 6rem 0;
+  background-image: url("../img/subpage-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  border-radius: 0;
+}
+@media (max-width: 768px) {
+  .breadcrumb {
+    padding: 4rem 0;
+    background-position: left 10% center;
+  }
+}
+.breadcrumb h1 {
+  font-weight: 600;
+  color: #fff;
+  font-size: 42px;
+  margin-bottom: 0;
+}
+
+.form__white input:not([type=submit]) {
+  border: 1px solid #d9e3f2;
+  margin-bottom: 1rem;
+  width: 100%;
+  color: #3b3b3b;
+  font-size: 14px;
+  line-height: 28px;
+  padding: 0.75rem 1rem;
+  border-radius: 3px;
+  font-weight: 400;
+  transition-duration: 0.1s;
+}
+.form__white input:not([type=submit])::placeholder {
+  color: #3b3b3b;
+}
+.form__white input:not([type=submit]):focus {
+  border: 1px solid #2863ec;
 }
 
 .banks__item {
@@ -487,7 +551,7 @@ input, textarea {
   height: 40px;
   width: 40px;
   background-color: #fff;
-  content: url("../img/arrow-blue-right2.png");
+  content: url("../img/arrow-blue-right2.svg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -518,6 +582,87 @@ input, textarea {
   .howItWorks__content > div p {
     min-height: unset;
   }
+}
+
+.subpage {
+  padding: 7rem 0;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .subpage {
+    padding: 3rem 0;
+  }
+}
+.subpage a {
+  color: #2863ec;
+}
+
+.login {
+  border: 1px solid #d9e3f2;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 1500px) {
+  .login {
+    margin: 0 6rem;
+  }
+}
+.login__form {
+  width: 50%;
+  border-right: 1px solid #d9e3f2;
+  margin: 0.5rem 0;
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 993px) {
+  .login__form {
+    border-right: 0;
+    border-bottom: 1px solid #d9e3f2;
+    margin: 0 0.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .login__form {
+    padding: 3.5rem 1rem;
+  }
+}
+.login__newAccount {
+  width: 50%;
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login__newAccount p {
+  color: #000;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+@media (max-width: 993px) {
+  .login__newAccount {
+    padding: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .login__newAccount {
+    padding: 4rem 2rem;
+  }
+}
+@media (max-width: 993px) {
+  .login__form, .login__newAccount {
+    width: 100%;
+  }
+}
+.login a {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
 }
 
 @media (min-width: 1500px) {
