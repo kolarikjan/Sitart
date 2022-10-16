@@ -44,4 +44,14 @@ $(document).ready(function () {
             }
         }
     });
+
+    $(".register__company-activate").click(function (e) { 
+        let content = $(".register__company");
+        console.log(content);
+        if (content.hasClass("active")) {
+            content.removeClass("active");
+        } else {
+            content.addClass("active");
+        }
+    });
 });

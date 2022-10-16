@@ -1,5 +1,5 @@
 .breadcrumb {
-    padding: 6rem 0;
+    padding: 5.5rem 0;
     background-image: url("../img/subpage-background.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,5 +15,29 @@
         color: $primary-color-darkbg;
         font-size: 42px;
         margin-bottom: 0;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 1.25rem 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        li {
+            &:not(:last-of-type) {
+                padding-right: 2.5rem;
+                background-image: url("../img/arrow-white-right3.svg");
+                background-position: right 11px center;
+                background-repeat: no-repeat;
+            }
+            a {
+                font-size: 13px;
+                color: $primary-color-darkbg;
+            }
+            &:last-of-type {
+                font-weight: 600;
+            }
+        }
     }
 }

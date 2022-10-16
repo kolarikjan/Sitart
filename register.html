@@ -58,30 +58,86 @@
     </header>
     <div class="breadcrumb">
         <div class="container">
-            <h1>Přihlášení</h1>
-            <ul>
+            <h1>Registrace</h1><ul>
                 <li>
                     <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#">Přihlášení</a>
+                    <a href="#">Registrace</a>
                 </li>
             </ul>
         </div>
     </div>
     <main class="subpage">
         <div class="container">
-            <div class="login">
-                <form class="login__form form form__white">
-                    <input type="text" placeholder="Uživatelské jméno">
-                    <input type="password" placeholder="Heslo">
-                    <a href="#" class="mt-2 mb-4">Zapomněli jste heslo?</a>
-                    <input type="submit" value="Přihlásit" class="button-blue">
+            <div class="register">
+                <form class="register__form form form__grey">
+                    <div class="register__company active">
+                        <label class="form__checkbox">
+                            Nákup na firmu
+                            <input type="checkbox" class="register__company-activate" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="register__company-content">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <input type="text" placeholder="IČO">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <input type="text" placeholder="Název společnosti">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <input type="text" placeholder="DIČ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <input type="text" placeholder="Jméno">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <input type="text" placeholder="Příjmení">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <input type="text" placeholder="Ulice *">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <input type="text" placeholder="Číslo popisné *">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <input type="text" placeholder="Město *">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <input type="text" placeholder="PSČ *">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <input type="text" placeholder="Telefon *">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <input type="text" placeholder="Email *">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <input type="password" placeholder="Heslo *">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <input type="password" placeholder="Heslo znovu pro ověření *">
+                        </div>
+                    </div>
+                    <div class="form__conditions">
+                        <label class="form__checkbox">
+                            Souhlasím s obchodními podmínkami
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="form__checkbox">
+                            Souhlasím se zpracováním osobních údajů
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <input type="submit" value="Registrovat" class="button-blue">
                 </form>
-                <div class="login__newAccount">
-                    <p>Nemáte u nás účet ?</p>
-                    <a href="#">Zaregistrujete se zde</a>
-                </div>
             </div>
         </div>
     </main>
