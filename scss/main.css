@@ -403,6 +403,12 @@ input, textarea {
   -webkit-filter: grayscale(1);
   opacity: 0.6;
   max-height: 75px;
+  transition-duration: 0.1s;
+}
+.banks__item img:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  opacity: 1;
 }
 @media (min-width: 1500px) {
   .banks .owl-carousel {
