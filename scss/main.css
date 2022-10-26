@@ -57,20 +57,34 @@ input, textarea {
   background-color: #fff;
 }
 @media (max-width: 1500px) {
-  .header__logo {
-    margin-bottom: 1rem;
+  .header__logo img {
+    max-width: 200px;
+  }
+}
+@media (max-width: 1200px) {
+  .header__logo img {
+    margin-bottom: 0.5rem;
   }
 }
 @media (max-width: 993px) {
   .header__logo {
     margin-bottom: 0;
   }
+  .header__logo img {
+    max-width: 100%;
+  }
 }
 .header__nav {
-  padding: 2rem 1rem;
+  padding: 2rem 0;
 }
 @media (max-width: 1500px) {
   .header__nav {
+    padding: 1.5rem 0;
+  }
+}
+@media (max-width: 1200px) {
+  .header__nav {
+    justify-content: space-between;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;

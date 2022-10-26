@@ -2,15 +2,29 @@
     background-color: $background-color;
     &__logo {
         @include media("xxl") {
-            margin-bottom: 1rem;
+            img {
+                max-width: 200px;
+            }
+        }
+        @include media("xl") {
+            img {
+                margin-bottom: 0.5rem;
+            }
         }
         @include media("lg") {
             margin-bottom: 0;
+            img {
+                max-width: 100%;
+            }
         }
     }
     &__nav {
-        padding: 2rem 1rem;
+        padding: 2rem 0;
         @include media("xxl") {
+            padding: 1.5rem 0;
+        }
+        @include media("xl") {
+            justify-content: space-between;
             flex-wrap: wrap;
             @include flexCenter();
         }
