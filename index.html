@@ -3,7 +3,7 @@
     <!-- DEFAULTS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Červinka, s.r.o</title>
+    <title>Sitart.cz</title>
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +17,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <div class="header">
-        <div class="container-fluid">
-            <nav class="header__nav navbar navbar-expand-lg navbar-dark">
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav navbar navbar-expand-lg navbar-light">
                 <a class="header__logo" href="#">
                     <img src="img/logo.png" alt="logo" class="img-fluid">
                 </a>
@@ -30,286 +29,175 @@
                 <div class="collapse navbar-collapse" id="head-nav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#">Úvodní strana</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Naše služby</a>
+                            <a class="nav-link" href="#">Funkce</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Produkty</a>
+                            <a class="nav-link" href="#">Ceník</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">O firmě</a>
+                            <a class="nav-link" href="#">Kontakt</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Kontakty</a>
-                        </li>
-                        <li class="nav-item header__button">
-                            <a href="#" class="button-red">
-                                <img src="img/icon-eshop.png" alt="eshop icon">
-                                E-shop
-                            </a>
-                        </li>
-                        <li class="nav-item header__contact">
-                            <a href="#" class="header__contact-phone">+42-724 437 479</a>
-                            <a href="#" class="header__contact-email">cervinka@cervinka-hodejice.cz</a>
+                        <li class="nav-item header__login d-lg-none">
+                            <a href="#">Přihlášení</a>
+                            <a href="#">Registrace</a>
                         </li>
                     </ul>
                 </div>
-                <div class="header__rightbox">
-                    <div class="header__button">
-                        <a href="#" class="button-red">
-                            <img src="img/icon-eshop.png" alt="eshop icon">
-                            E-shop
-                        </a>
-                    </div>
-                    <div class="header__contact">
-                        <a href="#" class="header__contact-phone">+42-724 437 479</a>
-                        <a href="#" class="header__contact-email">cervinka@cervinka-hodejice.cz</a>
+                <div class="header__rightbox d-none d-lg-block">
+                    <div class="header__login">
+                        <a href="#">Přihlášení</a>
+                        <a href="#">Registrace</a>
                     </div>
                 </div>
             </nav>
         </div>
-    </div>
-
-    <div class="banner">
-        <div class="banner__homepage owl-carousel owl-theme">
-            <div class="banner__item">
-                <img src="img/banner.png" alt="banner" class="img-fluid banner__image">
-                <div class="banner__contentbox">
-                    <div class="container">
-                        <h2 class="banner__title">Kompletní <br> protipožární zabezpečení</h2>
-                        <p class="banner__text">Prodej hasicí techniky, revize hasicích přístrojů a školení požární bezpečnosti.</p>
-                        <a href="" class="button-red">Více o firmě</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="services section">
-        <div class="container">
-            <div class="section__title">
-                <h2>Naše služby - vaše bezpečnost</h2>
-            </div>
-            <div class="section__content">
+    </header>
+    <main>
+        <div class="hpBanner">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12 col-xl-6">
-                        <div class="services__box">
-                            <img src="img/sluzba1.png" alt="sluzba" class="img-fluid">
-                            <div>
-                                <h3>
-                                    <a href="" class="services__title">Servis, kontroly a opravy hasicí techniky</a>
-                                </h3>
-                                <p class="services__desctiption">Revize, kontroly a opravy hasicích přístrojů, detektorů kouře a další hasicí techniky.</p>
-                                <a href="" class="services__link">Více informací</a>
-                            </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="hpBanner__contentbox">
+                            <h1 class="hpBanner__title">Automatická fakturace nájmu</h1>
+                            <span>Výhody:</span>
+                            <ul class="hpBanner__advantages">
+                                <li>jednoduché založení nájemníka</li>
+                                <li>jednoduché založení nájemního prostoru (bytu, kanceláře ...)</li>
+                                <li>automatická fakturace</li>
+                                <li>automatický kontrola plateb na účtě</li>
+                                <li>automatické posílání upomínek</li>
+                            </ul>
+                            <a href="#" class="button-white">Více o firmě</a>
                         </div>
                     </div>
-                    <div class="col-12 col-xl-6">
-                        <div class="services__box">
-                            <img src="img/sluzba2.png" alt="sluzba" class="img-fluid">
-                            <div>
-                                <h3>
-                                    <a href="" class="services__title">Školení požární ochrany</a>
-                                </h3>
-                                <p class="services__desctiption">Školení vedoucích zaměstnanců, zaměstnanců, odborná příprava členů preventivní požární hlídky a preventistů.</p>
-                                <a href="" class="services__link">Více informací</a>
-                            </div>
+                    <div class="col-12 col-lg-6 d-none d-lg-block">
+                        <img src="img/banner-mainphoto.png" alt="banner" class="img-fluid hpBanner__image">
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="banks section section__grey">
+            <div class="container">
+                <div class="section__title">
+                    <h2>Importujeme platby z těchto bank</h2>
+                </div>
+                <div class="section__content">
+                    <div class="d-none d-md-block">
+                        <div class="banks__homepage owl-carousel owl-theme">
+                            <a href="#" class="banks__item">
+                                <img src="img/banks/cs.png" alt="bank">
+                            </a>
+                            <a href="#" class="banks__item">
+                                <img src="img/banks/air.png" alt="bank">
+                            </a>
+                            <a href="#" class="banks__item">
+                                <img src="img/banks/csob.png" alt="bank">
+                            </a>
+                            <a href="#" class="banks__item">
+                                <img src="img/banks/fio.png" alt="bank">
+                            </a>
+                            <a href="#" class="banks__item">
+                                <img src="img/banks/kb.png" alt="bank">
+                            </a>
+                            <a href="#" class="banks__item">
+                                <img src="img/banks/mb.png" alt="bank">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-12 col-xl-6">
-                        <div class="services__box">
-                            <img src="img/sluzba3.png" alt="sluzba" class="img-fluid">
-                            <div>
-                                <h3>
-                                    <a href="" class="services__title">Preventivní požární prohlídky</a>
-                                </h3>
-                                <p class="services__desctiption">Protipožární ochrana, zpracování požární dokumentace.</p>
-                                <a href="" class="services__link">Více informací</a>
-                            </div>
-                        </div>
+                    <div class="d-md-none">
+                        <a href="#" class="banks__item">
+                            <img src="img/banks/cs.png" alt="bank">
+                        </a>
+                        <a href="#" class="banks__item">
+                            <img src="img/banks/air.png" alt="bank">
+                        </a>
+                        <a href="#" class="banks__item">
+                            <img src="img/banks/csob.png" alt="bank">
+                        </a>
+                        <a href="#" class="banks__item">
+                            <img src="img/banks/fio.png" alt="bank">
+                        </a>
+                        <a href="#" class="banks__item">
+                            <img src="img/banks/kb.png" alt="bank">
+                        </a>
+                        <a href="#" class="banks__item">
+                            <img src="img/banks/mb.png" alt="bank">
+                        </a>
                     </div>
-                    <div class="col-12 col-xl-6">
-                        <div class="services__box">
-                            <img src="img/sluzba4.png" alt="sluzba" class="img-fluid">
-                            <div>
-                                <h3>
-                                    <a href="" class="services__title">Prodej další hasicí techniky</a>
-                                </h3>
-                                <p class="services__desctiption">Láhve na svařování, alarmy, sorbenty, výzbroj pro hasiče.</p>
-                                <a href="" class="services__link">Více informací</a>
-                            </div>
+                </div>
+            </div>
+        </div>
+        <div class="howItWorks section">
+            <div class="container">
+                <div class="section__title">
+                    <h2>Jak to funguje?</h2>
+                </div>
+                <div class="section__content">
+                    <div class="howItWorks__content">
+                        <div>
+                            <img src="img/flowchart/1.png" alt="icon">
+                            <p>Vytvoření účtu</p>
+                        </div>
+                        <div>
+                            <img src="img/flowchart/2.png" alt="icon">
+                            <p>Založení nájemníka</p>
+                        </div>
+                        <div>
+                            <img src="img/flowchart/3.png" alt="icon">
+                            <p>Založení nájemního prostoru</p>
+                        </div>
+                        <div>
+                            <img src="img/flowchart/4.png" alt="icon">
+                            <p>Nastavení ceny - spuštění fakturace</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="about section section__dark">
+    </main>
+    <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6 order-2 order-lg-1">
-                    <img src="img/homepage-map.png" alt="mapa" class="img-fluid mt-5 mt-lg-0">
-                </div>
-                <div class="col-12 col-lg-6 order-1 order-lg-2">
-                    <div class="section__title ">
-                        <h2>Hasící technika Červinka, s.r.o.</h2>
-                    </div>
-                    <div class="section__content">
-                        <div class="about__description">
-                            <p><b>Společnost Červinka-Czech Republic s.r.o.</b> založil pan Jiří Červinka roku 1992. Od té doby si upevnila postavení na trhu a stala se jedním z významných dodavatelů protipožárního vybavení v Evropě.</p>
-                            <p>Červinka-Czech Republic s.r.o. je nejen výrobcem, ale i distributorem hasicích přístrojů, hydrantového vybavení, výrobků protipožární ochrany a autodoplňků. Disponuje vlastním týmem revizních techniků, kteří provádějí širokou škálu služeb přímo u zákazníka po celé ČR, jako např. opravy a kontroly hasicích přístrojů, hydrantových systémů, tlakové zkoušky požárních hadic a suchovodů, požární zabezpečení staveb atd.</p>
-                        </div>
-                        <div class="about__numbers">
-                            <div>
-                                <img src="img/icon-trusted.png" alt="icon">
-                                <p class="about__numbers-count">30+</p>
-                                <p class="about__numbers-description">let zkušeností</p>
-                            </div>
-                            <div>
-                                <img src="img/icon-countries.png" alt="icon">
-                                <p class="about__numbers-count">35+</p>
-                                <p class="about__numbers-description">exportních zemí</p>
-                            </div>
-                            <div>
-                                <img src="img/icon-customers.png" alt="icon">
-                                <p class="about__numbers-count">100+</p>
-                                <p class="about__numbers-description">pravidelných zákazníků</p>
-                            </div>
-                        </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="footer__logo">
+                        <img src="img/logo2.png" alt="logo" class="img-fluid">
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="gallery section">
-        <div class="container">
-            <div class="section__title">
-                <h2>Reference</h2>
-            </div>
-            <div class="section__content">
-                <div class="gallery__homepage owl-carousel owl-theme">
-                    <div class="item">
-                        <a href="img/gal1.png" data-fancybox="homepage-gal">
-                            <img src="img/gal1.png" alt="gal" class="img-fluid">
-                        </a>
-                        <a href="img/gal3.png" data-fancybox="homepage-gal">
-                            <img src="img/gal3.png" alt="gal" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="img/gal2.png" data-fancybox="homepage-gal">
-                            <img src="img/gal2.png" alt="gal" class="img-fluid">
-                        </a>
-                        <a href="img/gal4.png" data-fancybox="homepage-gal">
-                            <img src="img/gal4.png" alt="gal" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="img/gal4.png" data-fancybox="homepage-gal">
-                            <img src="img/gal4.png" alt="gal" class="img-fluid">
-                        </a>
-                        <a href="img/gal2.png" data-fancybox="homepage-gal">
-                            <img src="img/gal2.png" alt="gal" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="img/gal3.png" data-fancybox="homepage-gal">
-                            <img src="img/gal3.png" alt="gal" class="img-fluid">
-                        </a>
-                        <a href="img/gal1.png" data-fancybox="homepage-gal">
-                            <img src="img/gal1.png" alt="gal" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="img/gal1.png" data-fancybox="homepage-gal">
-                            <img src="img/gal1.png" alt="gal" class="img-fluid">
-                        </a>
-                        <a href="img/gal3.png" data-fancybox="homepage-gal">
-                            <img src="img/gal3.png" alt="gal" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="brands">
-        <h2 class="brands__title"><span>Zastoupení značek</span></h2>
-        <div class="container">
-            <div class="brands__homepage owl-carousel owl-theme">
-                <div class="item">
-                    <a href="#">
-                        <img src="img/company1.png" alt="brand">
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <img src="img/company2.png" alt="brand">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-xl-4">
+                <div class="col-12 col-md-6 col-xl-3">
                     <div class="footer__address">
-                        <p>Červinka s.r.o. - Hodějice</p>
-                        <p>Rostislavova 1265</p>
-                        <p>Uherské Hradiště 68601</p>
+                        <p>MACHIN.CZ s.r.o.</p>
+                        <p>Tyršovo nám. 440</p>
+                        <p>686 01 Uherské Hradiště</p>
                     </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
                     <div class="footer__contact">
-                        <a href="" class="footer__email">+420 724 437 479</a>
-                        <a href="">cervinka@cervinka-hodejice.cz</a>
+                        <a href="#">machin@machin.cz</a>
+                        <a href="#" class="footer__contact-tel">+420 572 501 497</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                    <span class="footer__preTitle">pokud potřebujete více informací ?</span>
-                    <h2 class="footer__title">Neváhejte nás kontaktovat</h2>
-                    <form action="">
-                        <input type="text" placeholder="Jméno">
-                        <input type="text" placeholder="Email">
-                        <textarea placeholder="S čím vám můžeme pomoci ..."></textarea>
-                        <input type="submit" class="button-red">
-                    </form>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="pl-xl-5">
-                        <span class="footer__preTitle">Sledujte nás</span>
-                        <div class="footer__socials">
-                            <a href="#">
-                                <img src="img/icon-fb.png" alt="fb">
-                            </a>
-                            <a href="#">
-                                <img src="img/icon-tw.png" alt="tw">
-                            </a>
-                            <a href="#">
-                                <img src="img/icon-ig.png" alt="ig">
-                            </a>
-                            <a href="#">
-                                <img src="img/icon-yt.png" alt="yt">
-                            </a>
-                            <a href="#">
-                                <img src="img/icon-in.png" alt="in">
-                            </a>
-                        </div>    
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="footer__socials">
+                        <a href="#">
+                            <img src="img/icon-fb.png" alt="fb">
+                        </a>
+                        <a href="#">
+                            <img src="img/icon-ig.png" alt="ig">
+                        </a>
+                        <a href="#">
+                            <img src="img/icon-yt.png" alt="yt">
+                        </a>   
                     </div>
                 </div>
             </div>
+            <div class="copyright">
+                <p>Copyright © 2022 sitart.cz  |  Tvorba www stránek <a href="https://machin.cz/">MACHIN.CZ</a></p>
+            </div>
         </div>
-    </div>
-
-    <div class="copyright">
-        <div class="container">
-            <p>COPYRIGHT © 2022 Červinka s.r.o  |  TVORBA WWW STRÁNEK <a href="https://machin.cz/">MACHIN.CZ</a></p>
-        </div>
-    </div>
+    </footer>
 
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

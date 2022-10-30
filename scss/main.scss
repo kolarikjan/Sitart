@@ -6,18 +6,12 @@
 // Components
 @import "components/header.scss";
 @import "components/buttons.scss";
-@import "components/banners.scss";
-@import "components/services.scss";
 @import "components/sections.scss";
-@import "components/about.scss";
-@import "components/gallery.scss";
-@import "components/brands.scss";
 @import "components/footer.scss";
-@import "components/contactform.scss";
+@import "components/banner.scss";
 
 // Pages
-@import "pages/subpage.scss";
-@import "pages/contact.scss";
+@import "pages/homepage.scss";
 
 // Style 
 @media (min-width: map-get($breaks, "xxl")) {

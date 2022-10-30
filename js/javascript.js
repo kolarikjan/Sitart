@@ -24,6 +24,7 @@ $(document).ready(function () {
         nav:false,
         dots:false
     });
+
     $('.gallery__homepage').owlCarousel({
         items:1,
         loop:false,
@@ -44,13 +45,17 @@ $(document).ready(function () {
             }
         }
     });
-    $('.brands__homepage').owlCarousel({
+
+    $('.banks__homepage').owlCarousel({
         items:1,
         loop:false,
         rewind:true,
         margin:30,
         nav:false,
         dots:false,
+        autoplay:true,
+        autoplayTimeout:2500,
+        autoplayHoverPause:true,
         responsive : {
             0 : {
                 items : 1,
@@ -59,13 +64,13 @@ $(document).ready(function () {
                 items : 2,
             },
             993 : {
-                items : 3,
-            },
-            1200 : {
                 items : 4,
             },
-            1500 : {
+            1200 : {
                 items : 5,
+            },
+            1500 : {
+                items : 6,
             }
         }
     });

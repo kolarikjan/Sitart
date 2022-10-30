@@ -1,5 +1,8 @@
 .section {
-    padding: 5rem 0 6rem;
+    padding: 7rem 0;
+    @include media("md") {
+        padding: 4rem 0 5rem;
+    }
     &__title h2 {
         font-size: 36px;
         font-weight: 600;
@@ -8,8 +11,11 @@
         display: block;
         width: 100%;
         margin-bottom: 4rem;
+        @include media("md") {
+            margin-bottom: 2.5rem;
+        }
     }
-    &.section__dark &__title {
+    &__dark &__title {
         h2 {
             color: $primary-color-darkbg;
             text-align: left;
@@ -18,5 +24,8 @@
                 padding-top: 2rem;
             }
         }
+    }
+    &__grey {
+        background-color: $background-color-grey;
     }
 }
