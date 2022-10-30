@@ -16,36 +16,6 @@ $(document).ready(function () {
         
     });
 
-    $('.banner__homepage').owlCarousel({
-        items:1,
-        loop:false,
-        rewind:true,
-        margin:0,
-        nav:false,
-        dots:false
-    });
-
-    $('.gallery__homepage').owlCarousel({
-        items:1,
-        loop:false,
-        rewind:true,
-        margin:10,
-        nav:true,
-        dots:false,
-        navText:["<img src='img/arrow-slider1.png' alt='slider arrow'><img src='img/arrow-slider2.png' alt='slider arrow'>","<img src='img/arrow-slider1.png' alt='slider arrow'><img src='img/arrow-slider2.png' alt='slider arrow'>"],
-        responsive : {
-            0 : {
-                items : 2,
-            },
-            576 : {
-                items : 3,
-            },
-            993 : {
-                items : 4,
-            }
-        }
-    });
-
     $('.banks__homepage').owlCarousel({
         items:1,
         loop:false,
