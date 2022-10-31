@@ -591,7 +591,7 @@ input, textarea {
 }
 @media (max-width: 993px) {
   .contactForm {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
   .contactForm .form {
     padding: 4rem 1.5rem;
@@ -759,10 +759,112 @@ input, textarea {
   color: #2863ec;
 }
 .subpage p {
-  font-size: 15px;
+  font-size: 14px;
   color: #7e7e7e;
-  line-height: 26px;
+  line-height: 32px;
   margin-bottom: 1rem;
+}
+.subpage b, .subpage strong {
+  color: #000;
+}
+.subpage .container > *:first-child {
+  margin-top: 0 !important;
+}
+.subpage__section {
+  padding-bottom: 2rem;
+}
+.subpage__section p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.subpage__section img {
+  max-height: 400px;
+  display: block;
+  margin-left: auto;
+}
+@media (max-width: 768px) {
+  .subpage__section img {
+    margin: 3rem 0 0 0;
+  }
+}
+.subpage h2 {
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 600;
+  margin: 4rem 0 3rem;
+  letter-spacing: -0.3px;
+}
+@media (max-width: 768px) {
+  .subpage h2 {
+    margin: 3rem 0 2rem;
+  }
+}
+.subpage h3 {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 600;
+  margin: 4rem 0 3rem;
+  letter-spacing: -0.3px;
+}
+@media (max-width: 768px) {
+  .subpage h3 {
+    margin: 3rem 0 2rem;
+  }
+}
+.subpage h4 {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 600;
+  margin: 3rem 0 2rem;
+  letter-spacing: -0.3px;
+}
+.subpage .table-responsive {
+  margin-bottom: 4rem;
+}
+.subpage table {
+  margin-top: 1.5rem;
+  width: 100%;
+  border: 1px solid #eeeeee;
+  font-size: 14px;
+}
+.subpage table thead th {
+  background-color: #f8f8f8;
+  padding: 1.125rem 2rem;
+  color: #000;
+  border-bottom: 1px solid #eeeeee;
+}
+.subpage table tbody tr:not(:last-of-type) {
+  border-bottom: 1px solid #eeeeee;
+}
+.subpage table tbody tr td {
+  padding: 1.125rem 2rem;
+  color: #7e7e7e;
+  min-width: 150px;
+  white-space: nowrap;
+}
+.subpage ul, .subpage ol {
+  margin-bottom: 1rem;
+}
+.subpage ul li, .subpage ol li {
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 32px;
+}
+.subpage ul {
+  list-style: none;
+}
+.subpage ul li {
+  background-image: url("../img/icon-tick.png");
+  background-position: top 6px left;
+  background-repeat: no-repeat;
+  padding-left: 2rem;
+}
+.subpage ol {
+  margin-left: 1rem;
+}
+.subpage ol li::marker {
+  font-weight: bold;
+  color: #000;
 }
 
 .login {
@@ -890,7 +992,7 @@ input, textarea {
   font-size: 15px;
   color: #000;
   line-height: 26px;
-  margin-bottom: 0;
+  margin: 0;
   font-weight: 700;
 }
 .contact p {
